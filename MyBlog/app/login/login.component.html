@@ -1,0 +1,23 @@
+﻿<div class="container">
+    <div class="title">
+        Login 
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-sm-12">
+                <input [(ngModel)]="user.email" id="email"
+                       type="email" class="validate">
+                <label for="email">Email</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <input [(ngModel)]="user.password" id="password"
+                       type="password" class="validate">
+                <label for="password">Password</label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-deep-purple" id="action" name="action" (click)="login()"></button>
+        <span>{errorMsg}</span>
+    </div>
+</div>
